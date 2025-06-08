@@ -41,30 +41,54 @@ footer {
         margin: 0.5em 0;
     }
 }
+
 .heading-6 {
-    display: inline-block;
-    position: relative;
-    padding: 0 2.5em;
-    color: #333333;
+  display: inline-block;
+  position: relative;
+  padding: 0 2.5em;
+  color: #333333;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
+/* 共通の線スタイル */
 .heading-6::before,
 .heading-6::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    width: 45px;
-    height: 3px;
-    background-color: #4d22b3;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 3px;
+  background-color: #ccc; /* デフォルト色 */
 }
 
 .heading-6::before {
-    left: 0;
+  left: 0;
+}
+.heading-6::after {
+  right: 0;
 }
 
-.heading-6::after {
-    right: 0;
+/* 色ごとのカスタマイズ */
+.heading-6[data-color="blue"]::before,
+.heading-6[data-color="blue"]::after {
+  background-color: #007acc;
+}
+
+.heading-6[data-color="green"]::before,
+.heading-6[data-color="green"]::after {
+  background-color: #00aa44;
+}
+
+.heading-6[data-color="yellow"]::before,
+.heading-6[data-color="yellow"]::after {
+  background-color: #cc8b00;
+}
+
+.heading-6[data-color="red"]::before,
+.heading-6[data-color="red"]::after {
+  background-color: #cc3300;
 }
 
 .section {
@@ -72,7 +96,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .box {
