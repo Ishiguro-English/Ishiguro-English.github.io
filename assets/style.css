@@ -67,11 +67,6 @@ footer {
     right: 0;
 }
 
-<div class="section">
-  <a href="#" class="box green">時制</a>
-  <a href="#" class="box green">助動詞</a>
-</div>
-
 <style>
 .section {
   display: flex;
