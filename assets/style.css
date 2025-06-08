@@ -61,11 +61,13 @@ footer {
   background-color: #ccc; /* デフォルト色 */
 }
 
-.heading-6::before {
+.heading-6::before ｌ{
   left: 0;
+  margin-left: -40px;
 }
 .heading-6::after {
   right: 0;
+  margin-right: -40px;
 }
 
 /* 色ごとのカスタマイズ */
