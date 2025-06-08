@@ -59,15 +59,15 @@ footer {
   width: 60px;
   height: 3px;
   background-color: #ccc; /* デフォルト色 */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .heading-6::before ｌ{
   left: 0;
-  margin-left: -10px;
 }
 .heading-6::after {
   right: 0;
-  margin-right: 10px;
 }
 
 /* 色ごとのカスタマイズ */
