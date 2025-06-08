@@ -63,11 +63,11 @@ footer {
 
 .heading-6::before ｌ{
   left: 0;
-  margin-left: -40px;
+  margin-left: -10px;
 }
 .heading-6::after {
   right: 0;
-  margin-right: -40px;
+  margin-right: 10px;
 }
 
 /* 色ごとのカスタマイズ */
