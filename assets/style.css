@@ -67,7 +67,6 @@ footer {
     right: 0;
 }
 
-<style>
 .section {
   display: flex;
   flex-wrap: wrap;
@@ -94,7 +93,10 @@ footer {
 }
 
 /* 色パターン */
-.green { background-color: #e3fbe3; border: 1px solid #1fa21f; }
+.green {
+  background-color: #e3fbe3;
+  border: 1px solid #1fa21f;
+}
 
 /* スマホ対応 */
 @media (max-width: 600px) {
@@ -102,4 +104,3 @@ footer {
     flex: 0 0 90%;
   }
 }
-</style>
