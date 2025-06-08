@@ -73,34 +73,56 @@ footer {
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
+  padding: 0 10px;
 }
 
 .box {
-  flex: 0 0 40%;
-  min-width: 120px;
+  flex: 0 0 45%;
   padding: 15px 10px;
   text-align: center;
   border-radius: 8px;
-  color: #333;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
+  border: 2px solid transparent;
+  font-size: 1rem;
 }
 
+/* 色別スタイル（しるべ風） */
+.box[data-color="blue"] {
+  background-color: #e3f1fb;
+  border-color: #5b9bd5;
+  color: #0b305b;
+}
+
+.box[data-color="green"] {
+  background-color: #e3fbe3;
+  border-color: #28a745;
+  color: #1a3c1a;
+}
+
+.box[data-color="red"] {
+  background-color: #fde5e5;
+  border-color: #dc3545;
+  color: #5c1a1a;
+}
+
+.box[data-color="gray"] {
+  background-color: #f5f5f5;
+  border-color: #999;
+  color: #333;
+}
+
+/* ホバー時 */
 .box:hover {
   transform: scale(1.05);
 }
 
-/* 色パターン */
-.green {
-  background-color: #e3fbe3;
-  border: 1px solid #1fa21f;
-}
-
-/* スマホ対応 */
-@media (max-width: 600px) {
+/* PC（4列） */
+@media (min-width: 768px) {
   .box {
-    flex: 0 0 90%;
+    flex: 0 0 22%;
   }
+}
 }
